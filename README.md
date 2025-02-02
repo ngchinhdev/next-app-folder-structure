@@ -1,36 +1,220 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NextJS Application
+
+This is a scalable and maintainable Next.js TypeScript project using the **App Router**, designed for efficiency and ease of development. It comes configured with **Prettier**, **ESLint**, and **Docker** to streamline coding standards and deployment processes.
+
+## Features
+
+- **Next.js App Router**: Modern and efficient routing with built-in layouts and server components.
+- **TypeScript Support**: Type-safe development out of the box.
+- **ESLint and Prettier**: Maintain clean, consistent, and error-free code.
+- **Docker Support**: Easy containerization for deployment.
+- **Debugging Support**: Configured for an enhanced debugging experience.
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Ensure the following are installed on your system:
+
+- **Node.js** (>= 20.x) [Download here](https://nodejs.org/)
+- **npm** (comes with Node.js) or **yarn** as an alternative
+- **Docker** (for containerized deployment) [Download here](https://www.docker.com/)
+
+---
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone <repository-url>
+   cd <project-directory>
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+   Or if you prefer using `yarn`:
+
+   ```bash
+   yarn install
+   ```
+
+---
+
+### Development
+
+To start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to see your application in action.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Debugging
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Run the "Next.js Production Debug" configuration from VSCode to debug the built production code.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+### Linting & Formatting
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To lint the code using **ESLint**:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run lint
+```
 
-## Deploy on Vercel
+To automatically fix linting issues:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run lint:fix
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To format code using **Prettier**:
+
+```bash
+npm run format
+```
+
+---
+
+### Running with Docker
+
+To build and run the Docker container:
+
+1. Build the Docker image:
+
+   ```bash
+   docker build -t nextjs-app .
+   ```
+
+2. Run the Docker container:
+
+   ```bash
+   docker run -p 3000:3000 nextjs-app
+   ```
+
+Visit [http://localhost:3000](http://localhost:3000) to see the application.
+
+---
+
+### Scripts
+
+- **`npm run dev`**: Start the development server.
+- **`npm run build`**: Build the project for production.
+- **`npm start`**: Start the production server.
+- **`npm run lint`**: Run linting checks.
+- **`npm run lint:fix`**: Fix linting issues.
+- **`npm run format`**: Format the codebase.
+
+---
+
+### Directory Structure
+
+```
+├── app              # Application root using the App Router
+│   ├── layout.tsx     # Layout component
+│   ├── page.tsx       # Root page component
+├── public           # Static assets
+├── components       # Reusable UI components
+├── utils            # Utility functions
+├── tsconfig.json    # TypeScript configuration
+├── .eslintrc.json   # ESLint configuration
+├── .prettierrc      # Prettier configuration
+├── Dockerfile       # Docker configuration
+└── ...              # Order files and folders
+
+```
+
+---
+
+## Deployment
+
+### Production Build
+
+To create an optimized production build:
+
+```bash
+npm run build
+npm start
+```
+
+### Debugging Production Build
+
+To debug the built production code, use the following steps:
+
+1. Build the project:
+
+   ```bash
+   npm run build
+   ```
+
+2. Start the production server with inspect mode enabled:
+
+   ```bash
+   node --inspect .next/standalone/server.js
+   ```
+
+3. Attach a debugger in your IDE (like VSCode).
+
+### Docker Deployment
+
+To deploy with Docker, follow the steps in the **Running with Docker** section.
+
+---
+
+## Contributing
+
+1. Fork the project.
+2. Create your feature branch:
+
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+3. Commit your changes:
+
+   ```bash
+   git commit -m "Add your message here"
+   ```
+
+4. Push to the branch:
+
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+5. Create a pull request.
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## Acknowledgements
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Docker Documentation](https://docs.docker.com/)
+- [ESLint Documentation](https://eslint.org/)
+- [Prettier Documentation](https://prettier.io/)
+- [TypeScript Documentation](https://www.typescriptlang.org/)
+
+## Star the Project ⭐
+
+If you find this project useful, feel free to give it a star! ⭐
+
+Your support helps this project get more visibility and helps the community! Thank you!
+
+## License
+
+This project is licensed under the MIT License.
