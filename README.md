@@ -10,8 +10,6 @@ This is a scalable and maintainable Next.js TypeScript project using the **App R
 - **Docker Support**: Easy containerization for deployment.
 - **Debugging Support**: Configured for an enhanced debugging experience.
 
----
-
 ## Getting Started
 
 ### Prerequisites
@@ -21,8 +19,6 @@ Ensure the following are installed on your system:
 - **Node.js** (>= 20.x) [Download here](https://nodejs.org/)
 - **npm** (comes with Node.js) or **yarn** as an alternative
 - **Docker** (for containerized deployment) [Download here](https://www.docker.com/)
-
----
 
 ### Installation
 
@@ -45,8 +41,6 @@ Ensure the following are installed on your system:
    yarn install
    ```
 
----
-
 ### Development
 
 To start the development server:
@@ -60,8 +54,6 @@ Visit [http://localhost:3000](http://localhost:3000) to see your application in 
 ### Debugging
 
 Run the "Next.js Production Debug" configuration from VSCode to debug the built production code.
-
----
 
 ### Linting & Formatting
 
@@ -83,8 +75,6 @@ To format code using **Prettier**:
 npm run format
 ```
 
----
-
 ### Running with Docker
 
 To build and run the Docker container:
@@ -103,18 +93,12 @@ To build and run the Docker container:
 
 Visit [http://localhost:3000](http://localhost:3000) to see the application.
 
----
-
 ### Scripts
 
 - **`npm run dev`**: Start the development server.
 - **`npm run build`**: Build the project for production.
 - **`npm start`**: Start the production server.
 - **`npm run lint`**: Run linting checks.
-- **`npm run lint:fix`**: Fix linting issues.
-- **`npm run format`**: Format the codebase.
-
----
 
 ### Directory Structure
 
@@ -132,8 +116,6 @@ Visit [http://localhost:3000](http://localhost:3000) to see the application.
 └── ...              # Order files and folders
 
 ```
-
----
 
 ## Deployment
 
@@ -168,8 +150,6 @@ To debug the built production code, use the following steps:
 
 To deploy with Docker, follow the steps in the **Running with Docker** section.
 
----
-
 ## Contributing
 
 1. Fork the project.
@@ -193,14 +173,6 @@ To deploy with Docker, follow the steps in the **Running with Docker** section.
 
 5. Create a pull request.
 
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
 ## Acknowledgements
 
 - [Next.js Documentation](https://nextjs.org/docs)
@@ -217,4 +189,4 @@ Your support helps this project get more visibility and helps the community! Tha
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
